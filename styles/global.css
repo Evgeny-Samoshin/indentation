@@ -1,0 +1,158 @@
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto");
+  src: url(../assets/fonts/Roboto-Regular.woff2);
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto");
+  src: url(../assets/fonts/Roboto-Bold.woff2);
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto");
+  src: url(../assets/fonts/Roboto-Black.woff2);
+  font-weight: 900;
+  font-display: swap;
+}
+
+html {
+  position: relative;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000;
+  background-color: #fff;
+}
+
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  max-height: 100%;
+}
+
+
+button {
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ol,
+ul,
+h1,
+h2,
+h3,
+p,
+figure,
+fieldset,
+blockquote {
+  margin: 0;
+}
+
+iframe {
+  border: none;
+}
+
+address,
+cite {
+  font-style: normal;
+}
+
+/*
+Доступно скрываю элементы
+*/
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+
+/*
+Пример контейнера
+
+Если контейнер 1180px по макету,
+то для max-width прибавляем паддинги 30px*2, 
+в итоге 1240px
+Чтобы контент не прижимался к краям экрана
+*/
+
+.container {
+  max-width: 1140px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.container_no_padding {
+  padding: 0;
+}
+
+
+.section {
+  padding: 25px 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.h1,
+.h2:not(:nth-last-child(1)),
+.text:not(:nth-last-child(1)),
+.figure:not(:nth-last-child(1)),
+.list:not(:nth-last-child(1)) {
+  margin-bottom: 30px;
+}
+
+.h1 {
+  font-weight: 900;
+  font-size: 60px;
+}
+
+.h2 {
+  font-weight: 900;
+  font-size: 36px;
+}

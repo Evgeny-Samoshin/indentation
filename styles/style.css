@@ -1,0 +1,66 @@
+.article {
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+.container_gray {
+  border-radius: 10px;
+  padding: 25px 45px;
+  background-color: #f1f1f1;
+}
+
+.nav__title,
+.footer__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 44px;
+}
+
+.nav__list {
+  color: #02535f;
+}
+
+.list__item:not(:nth-last-child(1)) {
+  margin-bottom: 10px;
+}
+
+.list__link {
+  border-bottom: 1px solid #02535f;
+}
+
+.figure_weight_half {
+  display: inline-block;
+  max-width: 560px;
+}
+
+.figure__img {
+  margin: 0 auto;
+}
+
+.figure__text {
+  padding: 15px 30px;
+  color: #5e5e5e;
+}
+
+.figure_border_black {
+  border-top: 1px solid #000;
+}
+
+.wrapper__item:nth-child(odd) {
+  margin-right: 30px;
+}
+
+.wrapper__item:not(:nth-last-child(-n + 2)) {
+  margin-bottom: 30px;
+}
+
+.text-block {
+  display: inline-block;
+  /* ПОМОГИТЕ! по макету ширина текстового блока 490px, но почему-то при такой ширине блок съезжает вниз. 490+560+30=1080. Не понимаю что съедает 5px. Можете подсказать? */
+  max-width: 485px;
+  vertical-align: top;
+}
+
+.text-block>.text {
+  display: inline-block;
+}
